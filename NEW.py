@@ -1,24 +1,24 @@
 from email.policy import default
-from msilib import Table
+# from msilib import Table
 from string import whitespace
 from tkinter import *
 from tkinter import ttk
 from turtle import bgcolor, left, width
 from datetime import date
-from typing_extensions import final
-from click import command
+# from typing_extensions import final
+# from click import command
 import tkinter.messagebox as tmsg
-from PIL import Image,ImageTk
+# from PIL import Image,ImageTk
 from matplotlib import image
 from matplotlib.pyplot import text
 from numpy import double, expand_dims, pad
-from openpyxl import Workbook
-from pyparsing import White
+# from openpyxl import Workbook
+# from pyparsing import White
 
 import openpyxl as xl
-import openpyxl;
+# import openpyxl;
 import os
-from win32com import client
+# from win32com import client
 
 count=1
 total_tamt=0
@@ -196,7 +196,8 @@ def print():
         tmsg.showinfo("Error","The Net amount doesn't match the amount recieved")
         cash_entry.focus()
     else:
-        source="E:/GUI/Billing/Bill.xlsx"
+        # source="E:/GUI/Billing/Bill.xlsx"
+        source = "D:\GitHub\BillingSoftware\Bill.xlsx"
         wb=xl.load_workbook(source)
         ws=wb.worksheets[0]
 
